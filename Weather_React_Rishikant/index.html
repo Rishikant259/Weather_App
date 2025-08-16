@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="shortcut icon" href="img/bg.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome icon cdn  -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- sweetalert cdn -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+  <div class="app-main" id="parent">
+    <!-- Header -->
+    <div class="header">
+      <h2><i class="fas fa-cloud-sun"></i> Weather Finder</h2>
+      <p>Get instant weather updates for any city worldwide 🌍</p>
+    </div>
+
+    <!-- Search -->
+    <div class="searchInputBox">
+      <input type="text" id="input-box" class="input-box" placeholder="Enter city name...">
+      <button id="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Weather Output -->
+    <div class="weather-body" id="weather-body">
+      <div class="weather-card hidden">
+        <div class="location">
+          <h3 id="city-name">City Name</h3>
+          <p id="date">Saturday, Aug 16</p>
+        </div>
+        <div class="temp">
+          <h1 id="temperature">--°C</h1>
+          <img id="weather-icon" src="img/sun.png" alt="weather icon">
+        </div>
+        <div class="extra-info">
+          <p><i class="fas fa-cloud"></i> <span id="description">Description</span></p>
+          <p><i class="fas fa-tint"></i> Humidity: <span id="humidity">--%</span></p>
+          <p><i class="fas fa-wind"></i> Wind: <span id="wind">-- km/h</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with ❤️ by <strong>Your Name</strong></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
